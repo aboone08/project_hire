@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <title>Andranique Boone</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="icon" href="images/ab_working_logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js">
+  <link rel="icon" href="images/ab.png">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
       <nav class="navbar navbar-default"> <!--beginning of navbar-->
         <div class="container-fluid">
           <ul class="nav navbar-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#"><strong>Home</strong></a></li>
+              <li><a href="#"><strong>About</strong></a></li>
+              <li><a href="#"><strong>Contact</strong></a></li>
           </ul>
         </div>
       </nav> <!--end of navbar-->
@@ -22,6 +24,7 @@
         <div class="jumbotron" style="background-color:white">
           <div class="container">
             <h1>Hello and Welcome!</h1>
+            <img src="images/ab.png" alt="logo" id="logo"/>
             <div class="page-header">
               <h1><small>"Design is inherently optimistic. That is its power."<br> -William McDonough</small></h1>
             </div>
@@ -32,7 +35,13 @@
           <div class="jumbotron-about">
             <div class="container">
               <div class="page-header">
-                <h1>Andranique Boone<br><small>Don't let the negatives of life <em>control</em> you. Rise above them. Use them as your <em>stepping stones</em> to go higher than you ever dreamed possible. <br>-Mary Kay Ash</small></h1>
+                <h1>Andranique Boone<br><small>Don't let the negatives of life
+                  <u>control</u> you. Rise above them. Use them as your <u>stepping
+                    stones</u> to go higher than you ever dreamed possible.
+                    <br>-Mary Kay Ash</small></h1>
+              </div>
+              <div class="col-md-4">
+                <h2>Who I am</h2>
                 <p>Topping wafer chocolate cake pastry marzipan muffin fruitcake
                    fruitcake apple pie. Candy chupa chups chocolate bar danish
                    carrot cake. Jelly-o marshmallow dragée halvah sweet tootsie
@@ -48,34 +57,61 @@
                    gummies jelly-o ice cream gingerbread gummies candy canes.
                    Jujubes candy jujubes lemon drops apple pie sesame snaps muffin liquorice.</p>
               </div>
-            </div>
+              <br>
+              <div class="col-md-4">
+              <ul><h4>Web Dev Skills &amp Proficiencies</h4>
+                <li>Flexible</li>
+                <li>Good Listener</li>
+                <li>Motivated</li>
+                <li>JavaScript</li>
+                <li>Angular.JS</li>
+                <li>MongoDB</li>
+              </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle pull-right" type="button" id="btnR" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Resumé
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                 <li><a href="#">Resumé</a></li>
+                </ul>
+              </div>
           </div>
         </div>
       </div><!--end of about section-->
-
+<br>
       <div class="container-fluid"><!--beginning of contact section-->
-        <div class="col-md-8">
-
-          <form class="form-inline">
-            <h1>Contact</h1>
-            <div class="form-group">
-              <label for="exampleInputName2">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="name">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Contact</h2>
+          </div>
+            <div class="panel-body">
+              <form class="form-horizontal col-md-6">
+                <div class="form-group">
+                  <label for="Name"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></label>
+                  <input type="text" class="form-control" id="name" placeholder="name">
+                </div>
+                <div class="form-group">
+                  <label for="Email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></label>
+                  <input type="email" class="form-control" id="email" placeholder="email_address@email.com">
+                </div>
+                <div class="form-group">
+                  <label for="Text"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></label>
+                  <textarea class="form-control" rows="3" placeholder="Thanks for reaching out! How can I help you?!"></textarea>
+                  <br>
+                  <button type="submit" class="btn btn-default pull-right">Contact</button>
+                </div>
+              </form>
+              <img src="http://placehold.it/450x250/C39953/ffffff" id="placeholder">
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail2">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="email@.com">
-            </div>
-            <br>
-            <textarea class="form-control" rows="3" placeholder="I am looking forward to hearing from you. Please tell me why you wish to contact me."></textarea>
-            <button type="submit" class="btn btn-default">Contact</button>
-          </form>
         </div>
       </div><!--end of contact section-->
 
-      <nav class="navbar navbar-inverse"><!--nav footer-->
+      <nav class="navbar navbar-inverse"><!--footer-->
         <div class="container-fluid">
           <p class="navbar-text">address: P.O. Box 13022 Gainesville, FL 32604 || email: andranique.boone@gmail.com</p>
+          <a href="#"><img src="images/social-github.png" alt="github" height="40px" id="github"/></a><a href="#"><img src="images/social-linkedin-circle.png" alt="linkedin" height="40px"/ id="linkedin"></a>
         </div>
       </nav>
 </body>

@@ -1,27 +1,68 @@
-#brand {
-  height: inherit;
-  padding-bottom: 20px;
+@font-face {
+  font-family: lesser concern;
+  src: url('lesserConcern.otf');
 }
 
-@font-face {
-  font-family: lesserConcern;
-  src: url('lesserConcern.otf');
+li {
+    display: block;
+}
+
+li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e080";
+    font-family: 'glyphicon-check';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
+}
+
+body {
+  font-family: lesser concern;
+}
+
+.navbar {
+    font-size: 24px;
+}
+
+#logo {
+  position: inherit;
+  width: inherit;
+  height: inherit;
 }
 
 h1 {
   text-align: center;
-  font-family: lesserConcern;
 }
 
 .jumbotron-about {
   text-align: left;
-  background-color: #afcbb8;
+  background-color: #66cdaa;
 }
 
-/*.form-group {
-  margin-left: 50px;
-}*/
+#btnR {
+  margin-bottom: 8px;
+}
+
+.well {
+  text-align: left;
+}
 
 .navbar-text {
   text-align: center;
+}
+
+#placeholder {
+  padding-top: 26px;
+  padding-left: 70px;
+}
+
+.navbar-inverse {
+  text-align: right;
+  padding-top: 10px;
+}
+
+p {
+  font-size: 16px;
 }
