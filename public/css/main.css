@@ -2,3 +2,26 @@
   height: inherit;
   padding-bottom: 20px;
 }
+
+@font-face {
+  font-family: lesserConcern;
+  src: url('lesserConcern.otf');
+}
+
+h1 {
+  text-align: center;
+  font-family: lesserConcern;
+}
+
+.jumbotron-about {
+  text-align: left;
+  background-color: #afcbb8;
+}
+
+/*.form-group {
+  margin-left: 50px;
+}*/
+
+.navbar-text {
+  text-align: center;
+}
