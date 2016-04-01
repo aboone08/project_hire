@@ -1,5 +1,13 @@
-var dropdown = $("#");
+angular.module('contactApp',[
 
-$(document).on('show.bs.dropdown', function(){
-  $('#dropdown-toggle').dropdown('html/resume.html');
-});
+]);
+
+angular.module('contactApp')
+  .controller('ContactController', ContactController);
+
+ContactController.$inject = ['$scope', '$http', 'ContactService'];
+
+function ContactController($scope, $http, ContactService){
+  getContacts();
+  $scope.isEditing = false;
+}
