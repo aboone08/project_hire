@@ -1,16 +1,21 @@
-var mailer = require('../models/contact.model.js');
+var Contact = require('../models/contact.model.js');
+var ContactCtrl = {
+  submit: submitContact,
+  name: name,
+  email: email,
+  comment: comment,
+};
 
-    exports.contact = function (req,res,next) {
-        res.render('contact');
-    };
+function submitContact(req, res, next){
+  var name = req.body.name;
+  var email = req.body.email;
+  var comment = req.body.comment;
+};
+  Contact.create(function(err, contact){
+    if(err) throw err;
 
+    res.json(contact);
+  });
+};
 
-    exports.receiveMessage = function (req,res,next) {
-
-            mailer.sendOne(req.body,function (err,body) {
-                if(err) return next(err);
-                console.log(body);
-                res.send({message:'Your message has been successfully sent'});
-            });
-
-    };
+module.exports = ContactCtrl;
