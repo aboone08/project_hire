@@ -1,9 +1,6 @@
 var Contact = require('../models/contact.model.js');
 var ContactCtrl = {
-  submit: submitContact,
-  name: name,
-  email: email,
-  comment: comment,
+  contact: submitContact
 };
 
 function submitContact(req, res, next){

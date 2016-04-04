@@ -8,7 +8,7 @@ function ContactService($http){
     submit: submitContact,
     name: name,
     email: email,
-    // comment: comment
+    comment: comment
   }
 
   function  submitContact(){

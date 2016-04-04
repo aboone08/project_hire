@@ -1,8 +1,9 @@
-var mailgun = require('mailgun-js')
+var mailgun = require('mailgun-js'),
+  
     Schema = mailgun.Schema;
 
 // Contact model
-var contactSchema = new Contact({
+var contactSchema = new Schema({
   name: {
     type: String,
     required: true
@@ -11,7 +12,7 @@ var contactSchema = new Contact({
     type: String,
     required: true
   },
-  message: {
+  comment: {
     type: String,
     required: true
   }
