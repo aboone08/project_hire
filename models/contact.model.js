@@ -1,6 +1,6 @@
 var mailgun = require('mailgun-js'),
-  
-    Schema = mailgun.Schema;
+    mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
 // Contact model
 var contactSchema = new Schema({
@@ -18,6 +18,6 @@ var contactSchema = new Schema({
   }
 });
 
-var Contact = mailgun.model('Contact', contactSchema);
+var Contact = mongoose.model('Contact', contactSchema);
 
 module.exports = Contact;
